@@ -13,7 +13,8 @@ class EditContainer extends React.Component {
       picture: picture[0]
     });
   }
-
+  //Note : I am using Upload images from imagesToUpload folde inside public because of image path issue in mac i was not able to test it,
+  //Please upload the image from the same
   render() {
     console.log(this.state.picture.name);
     let { details } = this.props;
@@ -54,7 +55,7 @@ class EditContainer extends React.Component {
                   imgExtension={[".jpg", ".gif", ".png", ".gif"]}
                   maxFileSize={5242880}
                 />
-                <button type="button" onClick = {()=>this.props.setNewImage(this.state.picture.name)}className="btn btn-primary">Submit</button>
+                <button type="button" onClick = {()=>this.props.setNewImage(this.state.picture.name)}className="btn btn-dark">Submit</button>
               </div>
             </div>
           </div>

@@ -114,6 +114,10 @@ const MainApp = styled.div`
         object-fit: cover;
       }
     }
+    .btn-dark {
+      background: #3f4257;
+      width: 100%;
+    }
     .edit-container-header {
       display: flex;
       align-items: center;
