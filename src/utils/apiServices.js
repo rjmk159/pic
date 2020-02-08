@@ -1,7 +1,4 @@
 import axios from 'axios';
-import  apikey from './const'
-
-
 let api={};
 
 api.get =(url)=>{
