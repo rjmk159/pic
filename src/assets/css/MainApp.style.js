@@ -98,6 +98,10 @@ const MainApp = styled.div`
   top: 0;
   bottom: 0;
   padding: 100px 0 50px; 
+  overflow: scroll;
+  @media screen and (max-width:767px){
+    padding-right:10px;
+  }
   .edit-container-dialog {
     max-width: 600px;
     background: #fff;
