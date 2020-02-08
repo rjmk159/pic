@@ -10,7 +10,7 @@ class ImageModal extends React.Component {
         <span role="button" onClick={()=>this.props.closeModal()}className="close">&times;</span>
         <div className="image-dialog">
         <img
-          src={`${path}${details.imageName}.jpg`}
+          src={`${path}${details.imageName}${details.internalImage?'.jpg':''}`}
           alt={details}
           className="img-thumbnail"
         />
