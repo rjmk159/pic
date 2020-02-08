@@ -10,7 +10,7 @@ class ImageThumbnail extends React.Component{
           let path  = item.internalImage ? '/images/': '/imagesToUpload/'
           return(
             <div className="image-container" role="button" onClick={()=>this.props.setSelectedImage(item.imageName)}  key={index}>
-                <img src={`${path}${item.imageName}.jpg`} alt={item.imageName}  className="img-thumbnail"></img>
+                <img src={`${path}${item.imageName}${item.internalImage?'.jpg':''}`} alt={item.imageName}  className="img-thumbnail"></img>
             </div>
           )
         })

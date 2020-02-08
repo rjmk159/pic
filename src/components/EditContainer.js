@@ -17,6 +17,7 @@ class EditContainer extends React.Component {
   render() {
     console.log(this.state.picture.name);
     let { details } = this.props;
+    let path  = details.internalImage ? '/images/': '/imagesToUpload/'
     return (
       <div className="edit-container-Modal">
         <div className="edit-container-dialog">
@@ -34,7 +35,7 @@ class EditContainer extends React.Component {
             <div className="col-md-6">
               <label>Original Image</label>
               <img
-                src={`/images/${details.imageName}.jpg`}
+                src={`${path}${details.imageName}${details.internalImage?'.jpg':''}`}
                 alt={details}
                 className="img-thumbnail"
               />

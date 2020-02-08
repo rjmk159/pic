@@ -47,7 +47,7 @@ class MainApp extends React.Component {
         imageList[index].imageName = newImage;
         imageList[index].internalImage = false;
       }
-      // this.setState({imageList})
+      this.setState({imageList,details:null,editMode:false})
     }
   }
   render() {
