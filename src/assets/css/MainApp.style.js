@@ -8,6 +8,13 @@ const MainApp = styled.div`
   height: 200px;
   margin: 5px;
   cursor:pointer;
+  @media screen and (max-width:767px){
+    max-width: calc(50% - 10px);
+  }
+  @media screen and (max-width:480px){
+    max-width:100%;
+    margin:5px;
+  }
   .img-thumbnail {
     height: 100%;
     width: 100%;
